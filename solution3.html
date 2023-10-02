@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        
+        input {
+            opacity: .5;
+        }
+        input:focus {
+            opacity: 1;
+        }
+        input[type="text"] {
+            background-color: rgb(167, 204, 204);
+        }
+        input[type="email"] {
+            background-color: rgb(188, 190, 230);
+        }
+        input[type="password"] {
+            background-color: rgb(224, 168, 168);
+        }
+        input[type="number"] {
+            background-color: rgb(224, 168, 216);
+        }
+        input[type="radio"] {
+            background-color: rgb(147, 192, 167);
+        }
+        input[type="checkbox"] {
+            background-color: rgb(214, 224, 168);
+        }
+        button {
+            border-radius: 5px;
+            background-color: rgb(112, 72, 22);
+            color: white;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <label for="fname">First Name</label>
+        <input type="text" name="fname" id="fname" placeholder="Rahul" minlength="3" maxlength="25" required/>
+        <br>
+        <label for="lname">Last Name</label>
+        <input type="text" name="lname" id="lname" placeholder="Yadav" minlength="3" maxlength="25" required/>
+        <br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="rahul@example.com" minlength="3" maxlength="25" required/>
+        <br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="*******" minlength="8" required/>
+        <br>
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" name="cpassword" id="cpassword" placeholder="*******" minlength="8" required/>
+        <small style="color: red; display: none;" id="passvalidationmsg">password and confirm password does not match.</small>
+        <br>
+        <label for="age">Age</label>
+        <input type="number" name="age" id="age" placeholder="25" min="0" max="150" required/>
+        <br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" id="male" value="Male" checked/> Male
+        <input type="radio" name="gender" id="female" value="Female"/> Female
+        <input type="radio" name="gender" id="other" value="Other"/> Other
+        <br>
+        <label for="terms">Terms</label>
+        <input type="checkbox" name="terms" id="terms" value="Yes" checked /> I agree to terms and conditions.
+        <br>
+        <button type="submit">Registration</button>
+        
+        
+    </form>
+</body>
+</html>

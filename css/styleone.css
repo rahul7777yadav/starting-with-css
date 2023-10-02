@@ -1,0 +1,16 @@
+div {
+    font-size: 18px;
+}
+.first {
+    color: red;
+}
+.second {
+    color: green;
+}
+.third {
+    color: blue;
+    font-size: 18px;
+}
+#note {
+    font-weight: bold;
+}
